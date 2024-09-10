@@ -232,7 +232,7 @@ class IntrinsicImageDiffusion(LightningModule):
         return c_cat
 
     def load_state_dict(self, state_dict: Mapping[str, Any],
-                        strict: bool = True):
+                        strict: bool = False):
         r"""Copies parameters and buffers from :attr:`state_dict` into
         this module and its descendants. If :attr:`strict` is ``True``, then
         the keys of :attr:`state_dict` must exactly match the keys returned
